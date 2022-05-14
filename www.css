@@ -1,0 +1,205 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  height: 100%;
+  background-image: url("pinkmarble.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 900px;
+  border: #d4af37;
+  margin-top: 50px;
+  border-style: solid;
+  padding: 3rem;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 62px;
+  vertical-align: middle;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: black;
+}
+
+h2 {
+  font-size: 80px;
+  line-height: 62px;
+  vertical-align: middle;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+hr {
+  border-width: 1px 0;
+  border-color: black;
+  border-color: #888485;
+  border-color: black;
+}
+
+hr#hr-bottom {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 62px;
+  line-height: 62px;
+  vertical-align: middle;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: black;
+}
+
+h5 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#weather-icon-display {
+  height: 307px;
+  line-height: 307px;
+}
+
+#weather-icon {
+  font-size: 180px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -100px;
+}
+
+#temperature h4 {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#temperature p {
+  font-size: 300px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-bottom: 0;
+  text-align: left;
+  font-weight: 500;
+  line-height: 230px;
+}
+
+#temperature p sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -185px;
+  line-height: 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#temperature h5 {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+#weather-condition h6 {
+  font-size: 36px;
+  margin-bottom: 2px;
+}
+
+#weather-condition p {
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#condition {
+  text-transform: capitalize;
+}
+
+.temp-switch input {
+  font-size: 100px;
+}
+
+#city,
+h6 {
+  color: rgb(14, 13, 13);
+}
+
+.forecast {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  flex-direction: row;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+  vertical-align: middle;
+  float: none;
+}
+
+.weekday-temp {
+  text-align: center;
+}
+
+.row :hover {
+  color: #d4af37;
+}
+
+footer {
+  color: #d4af37;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+button {
+  border-radius: 50px;
+  border: 1px solid #575756;
+  color: #f7cac9 a(0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  float: right;
+}
+
+button:hover {
+  color: #faf8f8;
+  border-color: #d4af37;
+}
+
+.search__input {
+  border-radius: 50px;
+  border: 1px solid #575756;
+  color: #f7cac9 a(0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+input {
+  border-radius: 50px;
+  border: 1px solid #575756;
+  color: #f7cac9 a(0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}

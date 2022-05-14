@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Nickie Potter's Weather App</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900,300,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f595c3e68f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="www.css" />
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Search Bar -->
+    <form id="search-form">
+      <input type="search" placeholder=" Enter a city..." autocomplete=" off" id="city-input" />
+      <input class="search__input" input type="submit" value="Search" />
+      <button class="currentLocationButton" id="current-location-button">Get Current Location <i
+          class="fa-solid fa-location-pin"></i>
+      </button>
+
+    </form>
+
+    <!-- Current Weather -->
+    <h1 id="city">City</h1>
+    <h2 id="temperature">73°F</h2>
+    <h3> <span id="high"> High: 73 | </span> <span id="low"> Low: 40</span></h3>
+    <br />
+
+    <!-- Current Weather Conditions -->
+
+    <hr id="hr-bottom">
+
+    <div class="row" id="weather-condition">
+      <div class="col-md-2 col-md-offset-1">
+        <h6><i class="wi wi-cloud"></i></h6>
+        <p id="description">Sunny</p>
+      </div>
+      <div class="col-md-2">
+        <h6><i class="wi wi-humidity"></i></h6>
+        <p id="humidity">10%</p>
+      </div>
+      <div class="col-md-2">
+        <h6><i class="wi wi-strong-wind"></i></h6>
+        <p id="wind">windy 20 NE</p>
+      </div>
+      <div class="col-md-2">
+        <h6><i class="wi wi-thermometer"></i></h6>
+        <p id="feelslike">feels like</p>
+      </div>
+      <div class="col-md-2">
+        <h6><i class="wi wi-barometer"></i></h6>
+        <p id="pressure">10%</p>
+      </div>
+    </div>
+
+
+    <hr>
+    <!-- 5 day Forecast -->
+    <h4>5 Day Forecast</h4>
+    <div class="forecast">
+      <div class="row">
+
+        <div class="col-md-2 col-md-offset-1">
+          <h5 class="weekday">Friday</h5>
+          <h5><i class="wi wi-day-sunny"></i></h5>
+          <p class="weekday-temp"><strong>66°</strong>|38°</p>
+        </div>
+
+
+
+        <div class="col-md-2">
+          <h5 class="weekday">Saturday</h5>
+          <h5><i class="wi wi-showers"></i></h5>
+          <p class="weekday-temp"><strong>57°</strong>|38°</p>
+        </div>
+
+
+
+        <div class="col-md-2">
+          <h5 class="weekday">Sunday</h5>
+          <h5><i class="wi wi-day-cloudy"></i></h5>
+          <p class="weekday-temp"><strong>47°</strong>|32°</p>
+        </div>
+
+
+
+        <div class="col-md-2">
+          <h5 class="weekday">Monday</h5>
+          <h5><i class="wi wi-showers"></i></h5>
+          <p class="weekday-temp"><strong>45°</strong>|32°</p>
+        </div>
+
+
+        <div class="col-md-2">
+          <h5 class="weekday">Tuesday</h5>
+          <h5><i class="wi wi-showers"></i></h5>
+          <p class="weekday-temp"><strong>47°</strong>|38°</p>
+        </div>
+      </div>
+
+      <hr>
+      <br />
+      <footer></footer>
+
+
+      <script src="app.js"></script>
+
+</body>
+
+</html>
