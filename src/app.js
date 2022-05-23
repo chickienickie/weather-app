@@ -33,6 +33,8 @@ function displayTemperature(response) {
   let tempMin = document.querySelector("#low");
   let feelsLike = document.querySelector("#feelslike");
   let pressure = document.querySelector("#pressure");
+  let iconElement = document.querySelector("#icon");
+
 
   temperatureElement.innerHTML = ` ${Math.round(response.data.main.temp)}°C`;
   cityElement.innerHTML = response.data.name;
@@ -43,6 +45,10 @@ function displayTemperature(response) {
   tempMin.innerHTML = `Low: ${Math.round(response.data.main.temp_min)}°C`;
   feelsLike.innerHTML = ` ${Math.round(response.data.main.feels_like)}°C`;
   pressure.innerHTML = response.data.main.pressure;
+  iconElement.innerHTML = iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
 
 }
 
